@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{    
+    position: relative; /*O elemento é posicionado de acordo com seu local original no fluxo do documento, mas pode ser ajustado usando as propriedades de posicionamento ("top", "bottom", "left" e "right"). Ao usar valores de posicionamento, o elemento será deslocado em relação à sua posição original, mas o espaço ocupado por ele permanecerá reservado.*/
+    width: 100%;
+    display: flex;
+    min-height: 100%;
+    padding: 100px; /*Pra fazer um header maior*/
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    max-width: 80%;
+}
+
+.nav ul{
+    position: relative;
+    display: flex;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a{
+    display: inline-block;
+    color:#333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.nav ul li a:hover{
+    color: rgb(132, 14 , 201);
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textBox{
+    position: relative;
+    max-width: 600px;
+}
+
+.textBox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.textBox h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.textBox p{
+    color: #333;
+}
+
+.textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #017143;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px; /*Espaçamento entre as letras*/
+}
+
+.img-box{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.img-box img{
+    max-width: 340px;
+}
+
+.thumb{
+    position: absolute; /*Vai pra onde a tag pai ta no caso section*/
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.thumb li img{
+    max-width: 60px;
+}
+
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6); /*Diminui a escala*/
+    filter: invert(1);
+    cursor: pointer;
+}
+.circle{
+    border:1px solid aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #017143;
+    clip-path: circle(600px at right 800px); /*Largura formato lugar baixo*/
+}
